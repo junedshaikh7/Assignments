@@ -1,0 +1,16 @@
+ db
+ show dbs
+ use testing
+ db.createCollection("web15")
+ db.users.insert
+ db.users.insertMany
+ db.users.find({})
+ db.users.find({"_id" : ObjectId("62234834882723748445945d1")})
+ db.users.update({"_id" : ObjectId("6242628480172348402d42")}
+ db.users.update({},{$set:{"country":"india"}})
+ db.users.updateMany({},{$set:{"country":"india"}})
+ db.users.remove({"_id" : ObjectId("622646293645826326355d21")})
+ db.users.remove({})
+ db.users.deleteOne({"_id" : ObjectId("622772ef3833020924d55")})
+ db.users.deleteMany({"name"})
+ db.users.find()
